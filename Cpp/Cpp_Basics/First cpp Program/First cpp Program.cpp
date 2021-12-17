@@ -101,21 +101,77 @@ void vector_create()
 
 void if_statement() 
 {
+    // if statements consist of three components if, else if, and else. you can include however many else if statements but you should always end with an else statement.
     string answer;
-    cout << endl << "Input yes or no: ";
+    cout << endl << "Input yes or no: \n";
     cin >> answer;
     if (answer == "yes") {
-        cout << "You input yes! ";
+        cout << "You input yes! \n";
     }
     else if (answer == "no") {
-        cout << "You input no! ";
+        cout << "You input no! \n";
     }
     else{ 
-        cout << "You didn't type yes or no! ";
+        cout << "You didn't type yes or no! \n";
     }
        
+    // logical operators can also be used in if statements. what better way then to use bagles and cream cheese
+
+    int bagles = 5;
+    bool has_cream_cheese = true;
+
+    if (bagles > 5) {
+        cout << "More than 5 bagles:" << endl;
+    }
+    else if (bagles > 5 && has_cream_cheese == true) {
+        cout << "more than 5 bagles and with cream cheese" << endl;
+    }
+    else if (bagles <= 5) {
+        cout << "Less than 5 bagles but no cream cheese " << endl;
+    }
+    else if (bagles <= 5 || has_cream_cheese == true) {
+        cout << "Less than 5 bagles or has cream cheese" << endl;
+    }
 }
 
+void switch_statement() 
+{
+    int case_number = 2;
+    // switch cases are intresting in that they make programs faster however they can only use numerical cases to jump to the proper points. No strings or floats sadly.
+    switch (case_number) {
+        case 1:
+            cout << "You Chose 1";
+            break;
+        case 2:
+            cout << "You Chose 2";
+            break;
+        case 3:
+            cout << "You Chose 3";
+            break;
+        default:
+            cout << "Why you no like number :(";
+            break;
+    
+    }
+}
+
+void while_for_loops() 
+{
+    // here you can see the two main loops used for programs. either works but some are more suited for other situations.
+    int number = 0;
+    int loops = 0;
+
+
+    while (number != 1234) {
+        cout << "Type 1234 to exit the loop \n";
+        cin >> number;
+    }
+
+    for (int i = 0; loops < 10; loops++) {
+        cout << "You have completed " << loops << " loops " << "\n";
+    }
+
+}
 
 int main()
 {
@@ -126,5 +182,7 @@ int main()
     numbers();
     vector_create();
     if_statement();
+    while_for_loops();
+    switch_statement();
     return 0;
 }
