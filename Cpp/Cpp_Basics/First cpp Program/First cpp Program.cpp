@@ -6,8 +6,6 @@
 #include <list>
 #include <vector>
 
-
-
 using namespace std; 
 // namespace help define specific objects (function) we want ot use as to avoid naming conflicts.
 // doing this command removes the need to declare each object in the std library however you will still need to 

@@ -5,6 +5,11 @@
       "ProjectGuid": "90373c6f-f427-40c4-9856-eea66c273765",
       "DisplayName": "First cpp Program",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1
